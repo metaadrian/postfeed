@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "strict": true,
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "strictBindCallApply": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "types": ["node", "@types/jsdom", "jest"],
+    "strictPropertyInitialization": true,
+    "lib": ["es6", "es2017", "dom"],
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "baseUrl": "./",
+    "forceConsistentCasingInFileNames": true,
+    "plugins": [
+      {
+        "name": "typescript-strict-plugin"
+      }
+    ],
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.d.ts",
+    "./types/**/*",
+    "jest.setup.js",
+    "jest-dom.d.ts",
+    "src/frontend/tests/**/*.ts",
+    "src/frontend/tests/**/*.tsx"
+  ],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,1 @@
+export default 'mocked-profile-image-path';
